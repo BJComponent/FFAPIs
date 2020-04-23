@@ -38,10 +38,10 @@
 
 /* Begin PBXFileReference section */
 		078491E2FD5F2909F15D33B5 /* Pods-FFAPIs_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFAPIs_Example.release.xcconfig"; path = "Target Support Files/Pods-FFAPIs_Example/Pods-FFAPIs_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1C54D613B9E3EFC9715836E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1C54D613B9E3EFC9715836E0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		381DA745081052ED9BC85430 /* Pods-FFAPIs_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFAPIs_Tests.release.xcconfig"; path = "Target Support Files/Pods-FFAPIs_Tests/Pods-FFAPIs_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3C09BB27D03F4346218E1CE3 /* Pods-FFAPIs_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFAPIs_Example.debug.xcconfig"; path = "Target Support Files/Pods-FFAPIs_Example/Pods-FFAPIs_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		400C1733A6A09C59BE23B865 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		400C1733A6A09C59BE23B865 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FFAPIs_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FFAPIs_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +63,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C1708F8B2450C56CE349F938 /* FFAPIs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FFAPIs.podspec; path = ../FFAPIs.podspec; sourceTree = "<group>"; };
+		C1708F8B2450C56CE349F938 /* FFAPIs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FFAPIs.podspec; path = ../FFAPIs.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C5BFFC3BAFE211D3F5040A47 /* Pods_FFAPIs_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAPIs_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EBFE868EB83687B1C415DA /* Pods_FFAPIs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAPIs_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF456FC923EBE93B96BDF135 /* Pods-FFAPIs_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FFAPIs_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FFAPIs_Tests/Pods-FFAPIs_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,7 +103,6 @@
 				FF456FC923EBE93B96BDF135 /* Pods-FFAPIs_Tests.debug.xcconfig */,
 				381DA745081052ED9BC85430 /* Pods-FFAPIs_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -302,10 +302,12 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FFAPIs_Example/Pods-FFAPIs_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FFAPIs/FFAPIs.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFAPIs.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
