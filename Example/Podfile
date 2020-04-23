@@ -1,9 +1,13 @@
+source 'https://github.com/BJComponent/BJSpecs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
 use_frameworks!
 
 platform :ios, '8.0'
 
 target 'FFAPIs_Example' do
   pod 'FFAPIs', :path => '../'
+  pod 'FFToolsKit', '~> 0.1.0'
 
   target 'FFAPIs_Tests' do
     inherit! :search_paths
