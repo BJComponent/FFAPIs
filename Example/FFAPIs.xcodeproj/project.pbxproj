@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8AB02572D8DF4F96DA214022 /* Pods_FFAPIs_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5BFFC3BAFE211D3F5040A47 /* Pods_FFAPIs_Tests.framework */; };
+		A435D881245AE42F0059FA1B /* APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D879245AE42F0059FA1B /* APIRequest.m */; };
+		A435D882245AE42F0059FA1B /* NetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A435D87A245AE42F0059FA1B /* NetworkHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,13 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A435D877245AE42F0059FA1B /* APIResponseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIResponseProtocol.h; sourceTree = "<group>"; };
+		A435D878245AE42F0059FA1B /* FFReformProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FFReformProtocol.h; sourceTree = "<group>"; };
+		A435D879245AE42F0059FA1B /* APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIRequest.m; sourceTree = "<group>"; };
+		A435D87A245AE42F0059FA1B /* NetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkHelper.m; sourceTree = "<group>"; };
+		A435D87B245AE42F0059FA1B /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
+		A435D87C245AE42F0059FA1B /* APIRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequestProtocol.h; sourceTree = "<group>"; };
+		A435D87D245AE42F0059FA1B /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
 		C1708F8B2450C56CE349F938 /* FFAPIs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FFAPIs.podspec; path = ../FFAPIs.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C5BFFC3BAFE211D3F5040A47 /* Pods_FFAPIs_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAPIs_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EBFE868EB83687B1C415DA /* Pods_FFAPIs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAPIs_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,6 +118,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				A435D874245AE42F0059FA1B /* FFAPIs */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for FFAPIs */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -194,6 +204,45 @@
 				1C54D613B9E3EFC9715836E0 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		A435D874245AE42F0059FA1B /* FFAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				A435D875245AE42F0059FA1B /* Classes */,
+				A435D87F245AE42F0059FA1B /* Assets */,
+			);
+			name = FFAPIs;
+			path = ../FFAPIs;
+			sourceTree = "<group>";
+		};
+		A435D875245AE42F0059FA1B /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A435D876245AE42F0059FA1B /* APIs */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		A435D876245AE42F0059FA1B /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				A435D87B245AE42F0059FA1B /* APIRequest.h */,
+				A435D879245AE42F0059FA1B /* APIRequest.m */,
+				A435D87D245AE42F0059FA1B /* NetworkHelper.h */,
+				A435D87A245AE42F0059FA1B /* NetworkHelper.m */,
+				A435D87C245AE42F0059FA1B /* APIRequestProtocol.h */,
+				A435D877245AE42F0059FA1B /* APIResponseProtocol.h */,
+				A435D878245AE42F0059FA1B /* FFReformProtocol.h */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		A435D87F245AE42F0059FA1B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,17 +353,11 @@
 				"${PODS_ROOT}/Target Support Files/Pods-FFAPIs_Example/Pods-FFAPIs_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
 				"${BUILT_PRODUCTS_DIR}/FFAPIs/FFAPIs.framework",
-				"${BUILT_PRODUCTS_DIR}/FFToolsKit/FFToolsKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFAPIs.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FFToolsKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -374,7 +417,9 @@
 			files = (
 				6003F59E195388D20070C39A /* FFAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* FFViewController.m in Sources */,
+				A435D881245AE42F0059FA1B /* APIRequest.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				A435D882245AE42F0059FA1B /* NetworkHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

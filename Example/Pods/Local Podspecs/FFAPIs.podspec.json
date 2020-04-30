@@ -1,6 +1,6 @@
 {
   "name": "FFAPIs",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "A short description of FFAPIs.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/BJComponent/FFAPIs",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/BJComponent/FFAPIs.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "8.0"
@@ -22,9 +22,6 @@
   "dependencies": {
     "AFNetworking": [
 
-    ],
-    "FFToolsKit": [
-      "~> 0.1.0"
     ]
   }
 }
