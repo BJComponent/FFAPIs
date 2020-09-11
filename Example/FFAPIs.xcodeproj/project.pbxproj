@@ -72,6 +72,7 @@
 		A435D87B245AE42F0059FA1B /* APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequest.h; sourceTree = "<group>"; };
 		A435D87C245AE42F0059FA1B /* APIRequestProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIRequestProtocol.h; sourceTree = "<group>"; };
 		A435D87D245AE42F0059FA1B /* NetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkHelper.h; sourceTree = "<group>"; };
+		A43F1D14250B7A0400A2B17B /* FFApis.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FFApis.h; sourceTree = "<group>"; };
 		C1708F8B2450C56CE349F938 /* FFAPIs.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FFAPIs.podspec; path = ../FFAPIs.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C5BFFC3BAFE211D3F5040A47 /* Pods_FFAPIs_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAPIs_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0EBFE868EB83687B1C415DA /* Pods_FFAPIs_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FFAPIs_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +220,7 @@
 		A435D875245AE42F0059FA1B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				A43F1D14250B7A0400A2B17B /* FFApis.h */,
 				A435D876245AE42F0059FA1B /* APIs */,
 			);
 			path = Classes;
