@@ -14,11 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
-  - FFAPIs (0.1.3):
-    - AFNetworking
-    - FFAPIs/APIs (= 0.1.3)
-  - FFAPIs/APIs (0.1.3):
-    - AFNetworking
+  - FFAPIs (0.1.4):
+    - AFNetworking (~> 3.2.1)
+    - FFAPIs/APIs (= 0.1.4)
+  - FFAPIs/APIs (0.1.4):
+    - AFNetworking (~> 3.2.1)
 
 DEPENDENCIES:
   - FFAPIs (from `../`)
@@ -33,7 +33,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
-  FFAPIs: 279da13a4b9f9c39ab42452f76e3ca5204d03a03
+  FFAPIs: 4eaba51db2c2f398ab9ffa68e523e2554fb03231
 
 PODFILE CHECKSUM: c32c3f9c3a5571ce0307586ce4ce4c71829b4157
 
